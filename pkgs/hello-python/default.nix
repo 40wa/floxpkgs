@@ -1,9 +1,8 @@
 { flox
-, python
-, pythonPackages
+, python3Packages
 }:
 
-flox.pythonPackages.buildPythonPackage rec {
+flox.python3Packages.buildPythonApplication rec {
   project = "hello-python";
 
   # Programs and libraries used only at build-time.
